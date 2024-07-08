@@ -18,7 +18,7 @@ function checkIn() {
 ipcRenderer.on("checkInResponse", (event, response) => {
   if (response.success) {
     // Если чек-ин прошел успешно, выводим сообщение об этом
-    document.getElementById("checkInResult").innerHTML = `Чек-ин успешно выполнен!`; //Тру стори
+    document.getElementById("checkInResult").innerHTML = `Чек-ин успешно выполнен!`; //Преподователь написал здесь плохое слово
   } else {
     // В противном случае выводим сообщение об ошибке
     document.getElementById("checkInResult").innerHTML = `Ошибка при чек-ине!
